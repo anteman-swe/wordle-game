@@ -1,0 +1,28 @@
+{
+  "name": "wordle-game",
+  "version": "1.0.0",
+  "description": "A Wordle inspired game",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test __tests__/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anteman-swe/wordle-game.git"
+  },
+  "keywords": [
+    "Game",
+    "Words",
+    "Random"
+  ],
+  "author": "Anders Eriksson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anteman-swe/wordle-game/issues"
+  },
+  "homepage": "https://github.com/anteman-swe/wordle-game#readme",
+  "dependencies": {
+    "node": "^25.8.1"
+  },
+  "type": "module"
+}
