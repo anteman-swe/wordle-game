@@ -6,7 +6,7 @@
 4. Gå igenom det gissade ordet igen mot resterande bokstäver för att markera misplaced eller incorrect utifrån vad som finns kvar av det hemliga ordet.
 
 ## Teststrategi  
-- **Identiska ord:** Kontrollera att alla bokstöver blir *correct*
+- **Identiska ord:** Kontrollera att alla bokstäver blir *correct*
 - **Helt olika ord:** Kontrollera att alla bokstäver markeras som *incorrect*
 - **Dubletter:** Om gissningen har två av samma bokstav men det hemliga ordet bara har en, kontrollera att bara en markeras på korrekt sätt  (*correct* eller *misplaced*) och att den andra bokstaven markeras som *incorrect*
 - **Skiftläge:** Se till att versaler och gemener behandlas på samma sätt med lika resultat oavsett vilket  
