@@ -4,7 +4,7 @@
   "description": "A Wordle inspired game",
   "main": "index.js",
   "scripts": {
-    "test": "node --test __tests__/*.test.js"
+    "test": "node --test --experimental-test-coverage __tests__/*.test.js"
   },
   "repository": {
     "type": "git",
