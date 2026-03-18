@@ -8,6 +8,9 @@
 ## Teststrategi  
 - **Identiska ord:** Kontrollera att alla bokstäver blir *correct*
 - **Helt olika ord:** Kontrollera att alla bokstäver markeras som *incorrect*
+- **Bara en bokstav är korrekt:** Kontrollera att bara en bokstav markeras som *correct*
+- **En bokstav är rätt men felplacerad:** Kontrollera att bara en bokstav markeras som *misplaced*
+- **En bokstav är korrekt och en är felplacerad:** Kontrollera att en bokstav markeras *correct* och en bokstav markeras som *misplaced*
 - **Dubletter:** Om gissningen har två av samma bokstav men det hemliga ordet bara har en, kontrollera att bara en markeras på korrekt sätt  (*correct* eller *misplaced*) och att den andra bokstaven markeras som *incorrect*
 - **Skiftläge:** Se till att versaler och gemener behandlas på samma sätt med lika resultat oavsett vilket  
 
@@ -17,10 +20,9 @@
 2. Gå igenom den lagrade ordlistan och kontrollera om ordlängden är den valda  
     2.1 Om ordlängden är korrekt, kontrollera om dubletter av bokstäverna finns  
     .. 2.1.1 Om dubletter finns och inte tillåts, hoppa över ordet, gå vidare till nästa ord  
-    2.2 Om ordlängden inte är korrekt, hoppa över ordet gå vidare till nästa ord  
-    2.3 Annars lägg ordet i listan för ord som kan väljas  
+    2.2 Lägg ordet i listan för ord som kan väljas  
 3. Om listan med valbara ord är tom, returnera ett felmeddelande  
-4. Slumpa fram vilket ord som ska returneras genom att slumpa fram ett index mellan noll och valbara ord listans längd
+4. Slumpa fram vilket ord som ska returneras genom att slumpa fram ett index mellan noll och valbara-ord-listans längd
 5. Returnera ordet  
 
 ## Teststrategi
