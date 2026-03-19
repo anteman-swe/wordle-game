@@ -1,4 +1,4 @@
-import test, { describe } from 'node:test';
+import { test, describe } from 'node:test';
 import assert from 'node:assert';
 import wordSelect from '../wordSelect.js';
 import { wordList } from "../wordList.js";

@@ -1,6 +1,7 @@
 # Algoritm A
 ## Pseudokod  
-1. Skapa en array av samma längd som ordet med tomma platser för att senare lagra resultatet
+*(0. Kontrollera om det finns skillnad i ordlängder och fyll i så fall på med nollor för att hantera)*
+1. Skapa en array av samma längd som gissningsordet med tomma platser för att senare lagra resultatet
 2. Markera alla bokstäver som är korrekta först
 3. Håll reda på vilka bokstäver i det hemliga ordet som har använts
 4. Gå igenom det gissade ordet igen mot resterande bokstäver för att markera misplaced eller incorrect utifrån vad som finns kvar av det hemliga ordet.
@@ -21,7 +22,7 @@
     2.1 Om ordlängden är korrekt, kontrollera om dubletter av bokstäverna finns  
     .. 2.1.1 Om dubletter finns och inte tillåts, hoppa över ordet, gå vidare till nästa ord  
     2.2 Lägg ordet i listan för ord som kan väljas  
-3. Om listan med valbara ord är tom, returnera ett felmeddelande  
+3. Om listan med valbara ord är tom, returnera null  
 4. Slumpa fram vilket ord som ska returneras genom att slumpa fram ett index mellan noll och valbara-ord-listans längd
 5. Returnera ordet  
 

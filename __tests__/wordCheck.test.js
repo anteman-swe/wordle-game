@@ -1,8 +1,6 @@
-import test, { describe } from 'node:test';
+import { test, describe } from 'node:test';
 import assert from 'node:assert';
 import wordCheck from '../wordCheck.js';
-import wordSelect from '../wordSelect.js';
-import { wordList } from '../wordList.js';
 
 // Identical words: Check that alla characters gets marked as correct
 test('All characters is correct', () =>{
@@ -85,3 +83,4 @@ describe('Upper case and lower case should not matter and give the same result',
         }
     });
 });
+
