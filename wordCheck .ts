@@ -1,13 +1,11 @@
-import type { testTuple } from '../../shared/types.js'
+import type { testTuple } from '../../shared/types.ts'
 
 export default function wordCheck (guess: string, secret: string): Array<testTuple> {
    
     let guessSplitted: Array<string> = guess.toUpperCase().split('');
     let secretSplitted: Array<string | null> = secret.toUpperCase().split('');
 
-    const guessLength: number = guessSplitted.length;
-
-    let answerArray: Array<testTuple> = new Array(guessLength).fill(null);
+    let answerArray: Array<testTuple> = new Array(guessSplitted.length).fill(null);
 
     for(let index = 0; index < guessSplitted.length; index++) {
         if(guessSplitted[index] == secretSplitted[index]) {
@@ -19,7 +17,7 @@ export default function wordCheck (guess: string, secret: string): Array<testTup
     for(let index = 0; index < guessSplitted.length; index++) {
         if(!answerArray[index]) {
             const letter: string = guessSplitted[index]!;
-            const findIndex:number = secretSplitted.indexOf(letter!);
+            const findIndex:number = secretSplitted.indexOf(letter);
             if(findIndex !== -1){
                 answerArray[index] = {letter: letter, result: 'misplaced'};
                 secretSplitted[findIndex] = null;

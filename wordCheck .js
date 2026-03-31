@@ -1,8 +1,6 @@
 export default function wordCheck(guess, secret) {
-    const guessUpperCase = guess.toUpperCase();
-    const secretUpperCase = secret.toUpperCase();
-    let guessSplitted = guessUpperCase.split('');
-    let secretSplitted = secretUpperCase.split('');
+    let guessSplitted = guess.toUpperCase().split('');
+    let secretSplitted = secret.toUpperCase().split('');
     const guessLength = guessSplitted.length;
     let answerArray = new Array(guessLength).fill(null);
     for (let index = 0; index < guessSplitted.length; index++) {
