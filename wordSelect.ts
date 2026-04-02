@@ -1,4 +1,4 @@
-export default function wordSelect(wordList: Array<string>, wordLength: number, allowDuplicates: boolean = true) {
+export default function wordSelect(wordList: Array<string>, wordLength: number, allowDuplicates: boolean = true): string | null {
     const validWords = wordList.filter(word => {
         if(word.length !== wordLength) return false;
 
@@ -12,5 +12,5 @@ export default function wordSelect(wordList: Array<string>, wordLength: number, 
         return null;
     }
     const randomIndex = Math.floor(Math.random() * validWords.length);
-    return validWords[randomIndex];
+    return validWords[randomIndex]!;
 }
