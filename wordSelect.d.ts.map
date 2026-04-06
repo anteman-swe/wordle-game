@@ -1,1 +1,1 @@
-{"version":3,"file":"wordSelect.d.ts","sourceRoot":"","sources":["wordSelect.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,UAAU,UAAU,CAAC,QAAQ,EAAE,KAAK,CAAC,MAAM,CAAC,EAAE,UAAU,EAAE,MAAM,EAAE,eAAe,GAAE,OAAc,6BAe9G"}
+{"version":3,"file":"wordSelect.d.ts","sourceRoot":"","sources":["wordSelect.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,UAAU,UAAU,CAAC,QAAQ,EAAE,KAAK,CAAC,MAAM,CAAC,EAAE,UAAU,EAAE,MAAM,EAAE,eAAe,GAAE,OAAc,GAAG,MAAM,GAAG,IAAI,CAe9H"}
