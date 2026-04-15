@@ -1,4 +1,7 @@
-import type { testTuple } from '../src/shared/types.js'
+interface testTuple {
+    letter: string,
+    result: string
+}
 
 export default function wordCheck (guess: string, secret: string): Array<testTuple> {
    
